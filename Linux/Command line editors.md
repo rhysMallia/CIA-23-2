@@ -1,0 +1,74 @@
+**Nano & Pico**
+Bare bones, low barrier and installed by default.
+- nano - open with empty
+- nano file - open new file
+- ctrl + X- exit
+- ctrl + H - exit 
+****
+**Vi & Vim**
+full featured, decent learning curve.
+3 modes - insert, movement, command
+ - vim
+ - vim file
+ - ctrl + b - move up one screen
+ - ctrl + f - down one screen
+ - ctrl + u - up half a screen
+ - ctrl + d - down half a screen
+ - f letter (; to repeat) - jump to next letter ( ie. f f to go to next f)
+ - 0 - start of line
+ - $ - end of line
+ - w - start of next word
+ - e - end of next word
+ - b - start of previous word
+- movement repititon
+	- example: 4j - move the cursor down 4 lines
+	- 10fr - move cursor to the 10th r on this line
+- Search
+	- / - search downwards
+	- ? search upwarsd
+	- n next result (in direction)
+	- N previous result
+	- 4n jump to 4th resultn
+	- ctrl + O - go back to where you were
+	- ctrl + I - goes forward
+	- % - place cursor on ^[{(  and it will find the closing bracket
+- Insert
+	- i - behind cursor
+	- a - after ""
+	- A - end of current line
+	- o - after current line
+	- O - before current line
+	- esc or ctrl bracket - exit insert mode
+	- :s/old/new/g - substitute new for old (g = globally)
+		- #,#s/old/new/g - substitute between the ranges  
+- Change 
+	- ce - deletes until end of word and puts you into insert mode
+	- cc - the same but for entire lines
+	- c$ - delete until end of line
+	- cw - delete word
+- Command mode
+	- : q - quit unmodified
+	- : q ! - quit
+	- : e -open new or existing file
+	- : w - save
+	- : wq - exit and save
+	- : x - exit and save if modified
+	- ZZ - exit and save if modified (movement command)
+- Cursor
+	- Ctrl + g - show location in file and status
+	- G - move to a line in the file ie 123G
+	- gg - move to start of file
+	- 
+- hot tips
+	- yy - copy a line (yank)
+	- yz - copy cursor word
+	- y$ - copy frmo cursor to end of line
+	- p - pase
+	- v - highlight word
+	- V highlight line
+	- d - cut highlighted text (delete)
+	- dd - cut lnie (delete)
+	- u - undo
+	- : ! < 1 > - execute a shell command
+
+	- 
